@@ -312,6 +312,16 @@ input:focus, select:focus {
     left: 100%;
 }
 
+.result-section {
+    text-align: center;
+    width: 380px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .result {
     margin-top: 30px;
     padding: 0;
@@ -601,12 +611,12 @@ input:focus, select:focus {
 
 .footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    color: #666;
-    background: white;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    width: 380px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: white;
     padding: 20px;
@@ -1056,5 +1066,14 @@ html, body {
     
     .result {
         page-break-inside: avoid;
+    }
+}
+
+@media (max-width: 380px) {
+    .result-section,
+    .footer {
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 0;
     }
 }
